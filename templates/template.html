@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> {{title}} </title>
+</head>
+
+<body>
+	<table border="1">
+		<tr>
+			<th> Occupation </th>
+			<th> Weight	</th>
+		</tr>
+			
+		{% for key in l %}
+		<tr>
+			<td>{{key}}</td>
+			<td>{{l[key]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	Random occupation: {{occ}}
+</body>
+
+</html>
+		
+	
